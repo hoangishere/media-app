@@ -1,38 +1,5 @@
 {
-  "users": [
-    {
-      "id": 1,
-      "name": "Myra"
-    },
-    {
-      "name": "Gary Weimann PhD",
-      "id": 2
-    },
-    {
-      "name": "Sherri Larkin",
-      "id": 3
-    },
-    {
-      "name": "Tami Anderson",
-      "id": 4
-    },
-    {
-      "name": "Neal Rath",
-      "id": 5
-    },
-    {
-      "name": "Jerome Beatty II",
-      "id": 6
-    },
-    {
-      "name": "Lionel Heidenreich PhD",
-      "id": 7
-    },
-    {
-      "name": "Nancy Russel",
-      "id": 8
-    }
-  ],
+  "users": [],
   "albums": [],
   "photos": []
 }
