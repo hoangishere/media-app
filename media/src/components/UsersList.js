@@ -20,32 +20,34 @@ function UsersList() {
     doCreateUser();
   };
 
+  let content; 
+  // if we are loading user assign skeleton to the content variable
   if (isLoadingUsers) {
-    return <Skeleton times={6} className="h-10 w-full" />
-  }
-
-  if (loadingUsersError) {
-    return <div> Error fetching data...</div>
-  }
-
-  const renderedUsers = data.map((user) => {
-    return (<div key={user.id} className ="m-b2 border rounded">
-      <div className="flex p-2 justify-between items-center cursor-pointer">
-        {user.name}
+    content = <Skeleton times={6} className="h-10 w-full" />
+  } else if (loadingUsersError) {
+    // otherwise assign this div with error to content variable
+    content =<div> Error fetching data...</div>
+  } else {
+    //if not loading user or no error then assign this list to content variable
+    content = data.map((user) => {
+      return (<div key={user.id} className ="m-b2 border rounded">
+        <div className="flex p-2 justify-between items-center cursor-pointer">
+          {user.name}
+        </div>
       </div>
-    </div>
-    );
-  });
+      );
+    });
+  };
 
   return <div>
-    <div className="flex flex-row justify-between m-3">
+    <div className="flex flex-row justify-between items-centers m-3">
       <h1 className="m-2 text-xl">Users</h1>
       <Button loading={isCreatingUser} onClick={handleUserAdd}>
         + Add User 
       </Button>
       {creatingUserError && 'Error creating user...'}
     </div>
-    {renderedUsers}
+    {content}
   </div>;
 }
 
