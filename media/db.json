@@ -1,5 +1,14 @@
 {
-  "users": [],
+  "users": [
+    {
+      "name": "Randolph Lowe",
+      "id": 1
+    },
+    {
+      "name": "Shawn Moen",
+      "id": 2
+    }
+  ],
   "albums": [],
   "photos": []
 }
