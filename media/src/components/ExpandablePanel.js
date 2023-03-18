@@ -15,11 +15,11 @@ function ExpandablePanel({ header, children}) {
           {header}
         </div>
         <div className="cursor-pointer" onClick={handleClick}>
-        {expanded ? <GoChevronDown /> : <GoChevronLeft />}
+          {expanded ? <GoChevronDown /> : <GoChevronLeft />}
         </div>
       </div>
       {
-        expanded && <div className="p=-2 border-t">{children}</div>
+        expanded && <div className="p-2 border-t">{children}</div>
       }
     </div>
   );
