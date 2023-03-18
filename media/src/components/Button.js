@@ -1,5 +1,5 @@
 import className from 'classnames';
-
+import { GoSync } from 'react-icons/go';
 function Button({
   children,
   primary,
@@ -9,12 +9,14 @@ function Button({
   danger,
   outline,
   rounded,
+  loading, //adding loading prop
   ...rest
 }) {
   const classes = className(
     rest.className,
-    'flex items-center px-3 py-1.5 border',
+    'flex items-center px-3 py-1.5 border h-8', //add in h-8 for consistence height
     {
+      'opacity-80': loading, //when loading is true fade out
       'border-blue-500 bg-blue-500 text-white': primary,
       'border-gray-900 bg-gray-900 text-white': secondary,
       'border-green-500 bg-green-500 text-white': success,
@@ -31,8 +33,11 @@ function Button({
   );
 
   return (
-    <button {...rest} className={classes}>
-      {children}
+    //if loading is true disable button
+    <button {...rest} disabled={loading} className={classes}>
+      {loading ? <GoSync className="animate-spin"/> : children}
+      {/*Ternary expression if loading is true show icon n animate spin otherwise 
+      if loading is false show whatever children is*/}
     </button>
   );
 }
