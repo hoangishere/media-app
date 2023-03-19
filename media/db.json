@@ -7,8 +7,18 @@
     {
       "name": "Shawn Moen",
       "id": 2
+    },
+    {
+      "name": "Allison Crona",
+      "id": 3
     }
   ],
-  "albums": [],
+  "albums": [
+    {
+      "id": 10,
+      "title": "Hiking Trip",
+      "userId": 1
+    }
+  ],
   "photos": []
 }
