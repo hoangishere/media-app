@@ -9,7 +9,7 @@ function Button({
   danger,
   outline,
   rounded,
-  loading, //adding loading prop
+  loading, //adding loading prop with loading spinner
   ...rest
 }) {
   const classes = className(
