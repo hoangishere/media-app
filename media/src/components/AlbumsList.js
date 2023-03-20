@@ -26,10 +26,12 @@ function AlbumsList({ user }) {
       // header props
       const header = <div>{album.title}</div>;
     
-      return <ExpandablePanel key={album.id} header={header}>
-       List of photos in the album
+    return (
+      <ExpandablePanel key={album.id} header={header}>
+        List of photos in the album
       </ExpandablePanel>
-    })
+      );
+    });
   }
 
 

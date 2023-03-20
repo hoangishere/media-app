@@ -24,9 +24,11 @@ function Skeleton({ times, className }) {
   const boxes = Array(times)
     .fill(0)
     .map((_, i) => {
-      return <div key={i} className={outerClassNames}>
-          <div className={innerClassNames}/>
-        </div>;
+      return (
+      <div key={i} className={outerClassNames}>
+        <div className={innerClassNames}/>
+      </div>
+    );
   });
 
   return boxes;

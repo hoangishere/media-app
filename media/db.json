@@ -11,6 +11,10 @@
     {
       "name": "Allison Crona",
       "id": 3
+    },
+    {
+      "name": "Cecil Kreiger",
+      "id": 4
     }
   ],
   "albums": [
@@ -18,36 +22,6 @@
       "id": 10,
       "title": "Hiking Trip",
       "userId": 1
-    },
-    {
-      "userID": 1,
-      "title": "Incredible Cotton Chair",
-      "id": 11
-    },
-    {
-      "userID": 1,
-      "title": "Licensed Plastic Ball",
-      "id": 12
-    },
-    {
-      "userID": 1,
-      "title": "Practical Cotton Chair",
-      "id": 13
-    },
-    {
-      "userID": 1,
-      "title": "Luxurious Concrete Gloves",
-      "id": 14
-    },
-    {
-      "userID": 1,
-      "title": "Handcrafted Rubber Sausages",
-      "id": 15
-    },
-    {
-      "userID": 1,
-      "title": "Generic Fresh Salad",
-      "id": 16
     }
   ],
   "photos": []
