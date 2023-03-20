@@ -9,7 +9,11 @@ const albumsApi = createApi({
   endpoints(builder) {
     return {
       addAlbum: builder.mutation({
-        invalidatesTags: ['Album'],
+        // when this query run will find the tag "Album"
+        // and mark them out of date
+        invalidatesTags: (result, error, user) => {
+          return [{ type: 'Album', id: user.id }];
+        },
         query: (user) => {
           return {
             url: '/albums',
@@ -22,7 +26,10 @@ const albumsApi = createApi({
         },
       }),
       fetchAlbums: builder.query({
-        providesTags: ['Album'],
+        // Every Query to fetch albums going to be mark with "Album"
+        providesTags: (result, error, user) => {
+          return [{ type: 'Album', id: user.id }];
+        },
         query: (user) => {
           return {
             url: '/albums',
