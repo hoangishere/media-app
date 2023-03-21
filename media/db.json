@@ -5,10 +5,6 @@
       "id": 1
     },
     {
-      "name": "Shawn Moen",
-      "id": 2
-    },
-    {
       "name": "Allison Crona",
       "id": 3
     },
@@ -17,12 +13,6 @@
       "id": 4
     }
   ],
-  "albums": [
-    {
-      "id": 10,
-      "title": "Hiking Trip",
-      "userId": 1
-    }
-  ],
+  "albums": [],
   "photos": []
 }
