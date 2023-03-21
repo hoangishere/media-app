@@ -21,16 +21,9 @@ const albumsApi = createApi({
 
   endpoints(builder) {
     return {
-      removeAlbum: builder.mutation({
-        // this request don't need user object. it only need album.id to delete album
-        query: (album) => {
-          return {
-            url: `/albums/${album.id}`,
-            method: 'DETELE',
-          };
-        },
-      }),  
       addAlbum: builder.mutation({
+        // when this query run will find the tag "Album"
+        // and mark them out of date
         invalidatesTags: (result, error, user) => {
           return [{ type: 'Album', id: user.id }];
         },
@@ -64,9 +57,5 @@ const albumsApi = createApi({
   },
 });
 
-export const { 
-  useFetchAlbumsQuery, 
-  useAddAlbumMutation, 
-  useRemoveAlbumMutation, 
-} = albumsApi;
+export const { useFetchAlbumsQuery, useAddAlbumMutation } = albumsApi;
 export { albumsApi };
