@@ -13,6 +13,22 @@
       "id": 4
     }
   ],
-  "albums": [],
+  "albums": [
+    {
+      "userId": 3,
+      "title": "Sleek Frozen Tuna",
+      "id": 4
+    },
+    {
+      "userId": 4,
+      "title": "Practical Rubber Chair",
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "title": "Gorgeous Granite Chicken",
+      "id": 6
+    }
+  ],
   "photos": []
 }
