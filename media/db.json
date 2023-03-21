@@ -1,10 +1,6 @@
 {
   "users": [
     {
-      "name": "Randolph Lowe",
-      "id": 1
-    },
-    {
       "name": "Shawn Moen",
       "id": 2
     },
@@ -19,9 +15,9 @@
   ],
   "albums": [
     {
-      "id": 10,
-      "title": "Hiking Trip",
-      "userId": 1
+      "userId": 2,
+      "title": "Incredible Frozen Computer",
+      "id": 1
     }
   ],
   "photos": []
