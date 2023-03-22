@@ -28,7 +28,38 @@
       "userId": 1,
       "title": "Gorgeous Granite Chicken",
       "id": 6
+    },
+    {
+      "userId": 1,
+      "title": "Unbranded Steel Cheese",
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "title": "Gorgeous Concrete Towels",
+      "id": 8
     }
   ],
-  "photos": []
+  "photos": [
+    {
+      "albumId": 6,
+      "url": "https://loremflickr.com/150/150/abstract?lock=5633",
+      "id": 1
+    },
+    {
+      "albumId": 6,
+      "url": "https://loremflickr.com/150/150/abstract?lock=34708",
+      "id": 2
+    },
+    {
+      "albumId": 7,
+      "url": "https://loremflickr.com/150/150/abstract?lock=38356",
+      "id": 3
+    },
+    {
+      "albumId": 6,
+      "url": "https://loremflickr.com/150/150/abstract?lock=98190",
+      "id": 4
+    }
+  ]
 }
